@@ -76,7 +76,7 @@ h1,h2,h3,.brand-txt,.ftr h4{font-family:'Archivo Black','Barlow',sans-serif;text
 .hdr-in{gap:16px}
 .form-card-head h2{font-size:22px;margin:0}.form-card-head p{margin:6px 0 16px;font-size:14px;line-height:1.5;color:var(--muted,#475569);max-width:none}
 .form-card a{font-weight:700;text-decoration:underline}
-.request-form{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px}
+.request-form{display:grid;grid-template-columns:1fr;gap:4px 14px}
 .request-form .field{margin:0 0 10px}.request-form .field.full,.request-form .form-status,.request-form .form-submit{grid-column:1/-1}
 .request-form .field label{display:block;margin-bottom:6px}.request-form .field input,.request-form .field textarea{margin-top:0}
 .form-status{font-size:13px;color:#b42318;margin:0}.form-status:empty{display:none}
