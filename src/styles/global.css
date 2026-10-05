@@ -163,3 +163,5 @@ img { max-width:100%; }
 .preview-note{padding:10px 5vw;background:#fff2cf;color:#4c3b18;font-size:12px;border-bottom:1px solid #e5d299}.image-note{font-size:11px;color:#53656a}.prose a{text-decoration:underline} @media(min-width:1000px){.hero-inner{gap:6vw}}
 
 .form-card{border-radius:20px;box-shadow:0 14px 40px #16365318}.request-link,.button-primary{border-radius:8px}.hero::before{display:none}.hero h1{letter-spacing:-.045em}.brand-mark{border-radius:8px;transform:none}.brand-mark span{transform:none}
+
+.comparison{width:100%;border-collapse:collapse;margin:0 0 28px;font-size:13px}.comparison caption{text-align:left;font-weight:700;margin-bottom:12px}.comparison th,.comparison td{text-align:left;padding:12px;border:1px solid #d1d9d4;vertical-align:top}.comparison th{background:#edf3f0}
