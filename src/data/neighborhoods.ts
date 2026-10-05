@@ -1,4 +1,4 @@
-export const neighborhoods = [
+export const neighborhoods =  [
   {
     "slug": "cicero-center",
     "name": "Cicero Center",
@@ -12,6 +12,13 @@ export const neighborhoods = [
         "ps": [
           "The town history places the early settlement near Route 11 and Crabtree Lane, once called Cody's Corner. The historic route later carried a plank road and trolley. See <a href=\"https://ciceronewyork.net/history/\">Town of Cicero history</a>.",
           "Place history does not identify the age, material or condition of a private drain. Confirm those details from records and an inspection."
+        ]
+      },
+      {
+        "h": "What drain services do homeowners in Cicero Center ask about?",
+        "ps": [
+          "Start with the symptom. Water that drains slowly again and again points to <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs and slow drains</a>, while scale or crust inside a line is covered under <a href=\"/services/mineral-and-scale-deposits/\">mineral buildup</a>.",
+          "Once a line is clear, <a href=\"/services/preventative-maintenance/\">preventative hydro jetting</a> covers keeping it that way, and <a href=\"/guides/hydro-jetting-vs-snaking/\">hydro jetting vs snaking</a> compares the two methods if you are deciding. Back on the <a href=\"/\">Cicero hydro jetting page</a>, every service for Cicero is listed. The <a href=\"/neighborhood/south-bay/\">South Bay</a> page covers another part of Cicero."
         ]
       },
       {
@@ -58,6 +65,13 @@ export const neighborhoods = [
         "ps": [
           "The town history describes a trolley to South Bay on Oneida Lake and says South Bay Road later followed the trolley route. See <a href=\"https://ciceronewyork.net/history/\">Town of Cicero South Bay history</a>.",
           "Place history does not identify the age, material or condition of a private drain. Confirm those details from records and an inspection."
+        ]
+      },
+      {
+        "h": "How do the services fit homes in South Bay?",
+        "ps": [
+          "Each service page answers one question. <a href=\"/services/severe-grease-and-sludge/\">Grease and sludge</a> is for kitchen lines that back up, <a href=\"/services/tree-root-intrusions/\">tree roots</a> is for lines where roots may have gotten in, and <a href=\"/services/mineral-and-scale-deposits/\">mineral buildup</a> is for deposits that narrow a pipe over time.",
+          "If none of those sounds like your drain, <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs and slow drains</a> is the broader page, and <a href=\"/guides/how-hydro-jetting-works/\">how hydro jetting works</a> explains what the work involves before you ask anyone to do it. The <a href=\"/neighborhood/cicero-center/\">Cicero Center</a> page covers another part of Cicero."
         ]
       },
       {
