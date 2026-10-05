@@ -1,36 +1,17 @@
 ---
 import { business, serviceLinks, hoodLinks, guideLinks } from '../lib/site';
+import { phoneIcon, drop } from './Icons';
 import { u } from '../lib/utils';
+const [b1, b2, b3] = [business.city, 'Hydro Jetting', 'Pros'];
 ---
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-grid">
-      <div class="footer-brand-block">
-        <div class="footer-brand">{business.name}</div>
-        <p class="footer-blurb">{business.description}</p>
-      </div>
-      <div>
-        <h3>Services</h3>
-        <div class="footer-links">{serviceLinks.map((l) => <a href={u(l.href)}>{l.label}</a>)}</div>
-      </div>
-      <div>
-        <h3>Guides</h3>
-        <div class="footer-links">{guideLinks.map((a) => <a href={u(a.href)}>{a.label}</a>)}</div>
-        <h3 style="margin-top:28px">Neighborhoods</h3>
-        <div class="footer-links">{hoodLinks.map((a) => <a href={u(a.href)}>{a.label}</a>)}</div>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <div class="footer-contact">
-          <a href={business.phoneHref}>{business.phoneDisplay}</a>
-          <span>Cicero, New York</span>
-          <a href={u('/contact/')}>Request service</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; {new Date().getFullYear()} {business.name}</span>
-      <div class="legal-links"><a href={u('/privacy/')}>Privacy</a><a href={u('/terms/')}>Terms</a></div>
-    </div>
+<footer class="ftr">
+  <div class="ftr-in">
+    <div class="ftr-brand"><a class="brand" href={u('/')}><span class="brand-ico" set:html={drop} /><span class="brand-txt">{b1}{" "}<em>{b2}</em>{" "}{b3}</span></a>
+      <p>{business.description}</p></div>
+    <div><h4>Guides</h4>{guideLinks.map((l) => <a href={u(l.href)}>{l.label}</a>)}</div>
+    <div><h4>Neighborhoods</h4>{hoodLinks.map((l) => <a href={u(l.href)}>{l.label}</a>)}</div>
+    <div><h4>Services</h4>{serviceLinks.map((l) => <a href={u(l.href)}>{l.label}</a>)}<a href={u('/contact/')}>Request service</a><a href={u('/privacy/')}>Privacy</a><a href={u('/terms/')}>Terms</a></div>
   </div>
+  <div class="ftr-copy">&copy; 2026 {business.name}. No service or result is guaranteed.</div>
 </footer>
+<a class="fab-deal" href={business.phoneHref} aria-label={`Call ${business.name} at ${business.phoneDisplay}`}><span class="fab-deal-ico" aria-hidden="true" set:html={phoneIcon} /><span class="fab-deal-text"><span class="fab-deal-text-k">Call now</span><span class="fab-deal-text-v">{business.phoneDisplay}</span></span></a>

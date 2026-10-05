@@ -1,7 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Hero from '../../components/Hero.astro';
-import Callout from '../../components/Callout.astro';
+import ContactSection from '../../components/ContactSection.astro';
+import CardSection from '../../components/CardSection.astro';
 import { neighborhoods } from '../../data/neighborhoods';
 import { u } from '../../lib/utils';
 const title = 'Cicero, NY Neighborhoods | Cicero Hydro Jetting Pros';
@@ -9,10 +10,6 @@ const description = 'Researched local drain cleaning questions within Cicero, NY
 ---
 <Base title={title} description={description} path="/neighborhood/" crumbs={[{ name: 'Neighborhoods', path: '/neighborhood/' }]}>
   <Hero headline="Hydro Jetting Neighborhoods in Cicero, NY" intro="Drain problems are local, and so is the housing. Read the researched local-area drafts for Cicero." location="Neighborhoods" crumbs={[{ href: '/neighborhood/', label: 'Neighborhoods' }]} />
-  <section class="content-section"><div class="content-inner">
-    <div class="content-list">
-      {neighborhoods.map((n, i) => <article class="content-item"><div class="item-number">{String(i + 1).padStart(2, '0')}</div><div><h3><a href={u(`/neighborhood/${n.slug}/`)} style="color:inherit">{n.name}</a></h3><p>{n.intro}</p></div></article>)}
-    </div>
-  </div></section>
-  <Callout />
+  <CardSection items={neighborhoods.map((x) => ({ name: x.name, text: x.intro, href: `/neighborhood/${x.slug}/` }))} cta="Read the local draft" />
+  <ContactSection location="Neighborhoods" />
 </Base>

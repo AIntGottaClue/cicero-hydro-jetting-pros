@@ -1,7 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Hero from '../../components/Hero.astro';
-import Callout from '../../components/Callout.astro';
+import ContactSection from '../../components/ContactSection.astro';
+import CardSection from '../../components/CardSection.astro';
 import { guides } from '../../data/pages';
 import { u } from '../../lib/utils';
 const title = 'Hydro Jetting Guides | Cicero Hydro Jetting Pros';
@@ -9,10 +10,6 @@ const description = 'Plain guides on how hydro jetting works and how it compares
 ---
 <Base title={title} description={description} path="/guides/" crumbs={[{ name: 'Guides', path: '/guides/' }]}>
   <Hero headline="Hydro Jetting Guides in Cicero, NY" intro="Short guides to help you ask the right questions before any drain cleaning." location="Guides" crumbs={[{ href: '/guides/', label: 'Guides' }]} />
-  <section class="content-section"><div class="content-inner">
-    <div class="content-list">
-      {guides.map((g, i) => <article class="content-item"><div class="item-number">{String(i + 1).padStart(2, '0')}</div><div><h3><a href={u(`/guides/${g.slug}/`)} style="color:inherit">{g.name}</a></h3><p>{g.blurb}</p></div></article>)}
-    </div>
-  </div></section>
-  <Callout />
+  <CardSection items={guides.map((x) => ({ name: x.name, text: x.blurb, href: `/guides/${x.slug}/` }))} cta="Read the guide" />
+  <ContactSection location="Guides" />
 </Base>
