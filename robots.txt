@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cicerohydrojetting.prosapp.site/sitemap.xml
